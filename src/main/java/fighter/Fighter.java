@@ -24,6 +24,7 @@ public abstract class Fighter extends Player implements IChange,IDefend,IWeapon 
 
 
     public String attack(Player defender) {
+        defender.takeDamage();
         return String.format("%s attacking %s with %s", this.getName(),defender.getName(),this.getWeapon().getName());
     }
 

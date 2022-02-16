@@ -39,6 +39,7 @@ public class DwarfTest {
     @Test
     public void canAttack(){
         assertEquals("Balor Bronzebeard attacking Bob with Axe", dwarf.attack(dwarf1));
+        assertEquals(90, dwarf1.getHealthPoints());
     }
 
     @Test
