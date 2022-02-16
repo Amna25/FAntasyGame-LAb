@@ -1,4 +1,4 @@
-package player.fighter;
+package fighter;
 
 public class Knight {
 }

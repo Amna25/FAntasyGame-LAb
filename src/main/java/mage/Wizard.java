@@ -1,4 +1,4 @@
-package player.mage;
+package mage;
 
 public class Wizard {
 }

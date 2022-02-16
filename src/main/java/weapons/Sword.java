@@ -1,4 +1,4 @@
-package player.weapons;
+package weapons;
 
 public class Sword {
 }

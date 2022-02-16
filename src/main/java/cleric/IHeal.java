@@ -1,4 +1,4 @@
-package player.cleric;
+package cleric;
 
 public interface IHeal {
 }

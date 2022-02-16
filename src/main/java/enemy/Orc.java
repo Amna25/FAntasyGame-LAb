@@ -1,4 +1,4 @@
-package player.enemy;
+package enemy;
 
 public class Orc {
 }
