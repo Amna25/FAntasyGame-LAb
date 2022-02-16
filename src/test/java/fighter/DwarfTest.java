@@ -4,6 +4,7 @@ package fighter;
 import org.junit.Before;
 import org.junit.Test;
 import weapons.Axe;
+import weapons.Club;
 
 import static org.junit.Assert.assertEquals;
 
@@ -40,4 +41,10 @@ public class DwarfTest {
         assertEquals("Balor Bronzebeard attacking Bob with Axe", dwarf.attack(dwarf1));
     }
 
+    @Test
+    public void canChangeWeapons(){
+        Club club = new Club();
+        dwarf.changeItem(club);
+        assertEquals(club, dwarf.getWeapon());
+    }
 }

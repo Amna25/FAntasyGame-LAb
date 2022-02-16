@@ -1,5 +1,7 @@
 package behaviours;
 
+import weapons.IWeapon;
+
 public interface IChange {
-    void changeItem();
+    void changeItem(IWeapon weapon);
 }
