@@ -17,6 +17,10 @@ public abstract class Player {
         return healthPoints;
     }
 
+    public void addHealthPoints(int healingPoints){
+        this.healthPoints += healingPoints;
+    }
+
     public void takeDamage(){
         this.healthPoints -= 10;
     }
