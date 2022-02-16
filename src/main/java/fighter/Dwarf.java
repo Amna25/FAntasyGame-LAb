@@ -5,8 +5,8 @@ import player.Player;
 import weapons.IWeapon;
 
 public class Dwarf extends Fighter {
-    public Dwarf(String name, int healthPoints, IWeapon weapon, Protection protection) {
-        super(name, healthPoints, weapon, protection);
+    public Dwarf(String name, int healthPoints, IWeapon weapon) {
+        super(name, healthPoints, weapon);
     }
 
     @Override
@@ -16,11 +16,11 @@ public class Dwarf extends Fighter {
 
     @Override
     public String defend(Player attacker) {
-        return null;
+        return String.format("%s defending against %s", this.getName(), attacker.getName());
     }
 
     @Override
-    public String attack(Player defender, IWeapon weapon) {
-        return null;
+    public String attack(Player defender) {
+        return String.format("%s attacking %s with %s", this.getName(),defender.getName(),this.getWeapon().getName());
     }
 }

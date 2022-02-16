@@ -4,5 +4,7 @@ import player.Player;
 
 public interface IWeapon {
 
-    public String attack(Player defender, IWeapon weapon);
+    public String attack(Player defender);
+
+    public String getName();
 }
